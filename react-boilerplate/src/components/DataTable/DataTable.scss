@@ -1,0 +1,27 @@
+.data-table {
+    display: flex;
+    flex-direction: column;
+    &__header {
+        width: 100%;
+        display: flex;
+        &__column-id,
+        &__column-firstName,
+        &__column-lastName,
+        &__column-email,
+        &__column-phone {
+            width: 100%;
+            border: 1px solid #000000;
+            border-right: 0;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:last-child {
+                border-right: 1px solid #000000;
+            }
+            &__title {
+                font-weight: bold;
+            }
+        }
+    }
+}
